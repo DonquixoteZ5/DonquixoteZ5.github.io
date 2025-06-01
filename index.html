@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proyecto</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para ti mi niña bonita 💖</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Enviando abrazo y amor virtual</h1>
-        <img src="amor.png" alt="">
-        <p id="loading-message">
-            enviando...</p>
-        <div class="box">
-            <div class="box__loading">
+  <canvas id="star-canvas"></canvas>
 
-            </div>
-        </div>
-
+  <div class="card">
+    <h1>Hola mi amor bonito 💕</h1>
+    <p>Solo queria recordarte lo mucho que te amo. <br>
+    Eres una persona increible y realmente super importante 
+    para mi, gracias por existir <br> y por permitirme estar en tu vida. ✨</p>
+    <div class="buttons">
+      <button onclick="mostrarMensaje()">Haz clic aquí 😋</button>
+      <button onclick="toggleAudio()" class="audio-btn">🎵 Música</button>
     </div>
-    <script src="script.js"></script>
-    
+  </div>
+
+  <audio id="background-music" loop>
+    <source src="flower.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
