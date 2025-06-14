@@ -2,28 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Para ti mi niña bonita 💖</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amor</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <canvas id="star-canvas"></canvas>
+  <h1>Te amo 💖</h1>
 
-  <div class="card">
-    <h1>Hola mi amor bonito 💕</h1>
-    <p>Solo queria recordarte lo mucho que te amo. <br>
-    Eres una persona increible y realmente super importante 
-    para mi, gracias por existir <br> y por permitirme estar en tu vida. ✨</p>
-    <div class="buttons">
-      <button onclick="mostrarMensaje()">Haz clic aquí 😋</button>
-      <button onclick="toggleAudio()" class="audio-btn">🎵 Música</button>
-    </div>
-  </div>
-
-  <audio id="background-music" loop>
-    <source src="flower.mp3" type="audio/mpeg">
-    Tu navegador no soporta audio HTML5.
+  <!-- Audio de fondo -->
+  <audio id="audio" autoplay loop>
+    <source src="lost.mp3" type="audio/mpeg" />
+    Tu navegador no soporta el audio HTML5.
   </audio>
+
+  <!-- Botón para pausar/reanudar -->
+  <button onclick="toggleAudio()">Music 😊</button>
 
   <script src="script.js"></script>
 </body>
