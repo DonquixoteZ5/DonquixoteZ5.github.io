@@ -2,21 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi amor bonito 🥺</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Te amo 💖</h1>
+  <div id="floating-elements"></div>
 
-  <!-- Audio de fondo -->
-  <audio id="audio" autoplay loop>
-    <source src="lost.mp3" type="audio/mpeg" />
-    Tu navegador no soporta el audio HTML5.
-  </audio>
-
-  <!-- Botón para pausar/reanudar -->
-  <button onclick="toggleAudio()">Music 😊</button>
+  <!-- Reproductor de música tipo Spotify -->
+  <div class="player">
+    <img src="flor.jpg" alt="Portada" class="cover">
+    <div class="info">
+      <h3>Mi Canción Romántica</h3>
+      <p>Real 💖</p>
+    </div>
+    <button id="playPause">▶️</button>
+    <audio id="audio" src="Silvina Moreno - Real (Video Oficial)(MP3_160K).mp3" preload="auto"></audio>
+  </div>
 
   <script src="script.js"></script>
 </body>
