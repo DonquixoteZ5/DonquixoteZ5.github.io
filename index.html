@@ -2,22 +2,78 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi amor bonito 🥺</title>
+  <title>💖 Encuentra las Cartas Especiales</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="floating-elements"></div>
+  <div id="game-container">
+    <h1 class="title">💘 Encuentra las cartas especiales 💘</h1>
+    <div class="grid" id="grid"></div>
+  </div>
 
-  <!-- Reproductor de música tipo Spotify -->
-  <div class="player">
-    <img src="flor.jpg" alt="Portada" class="cover">
-    <div class="info">
-      <h3>Mi Canción Romántica</h3>
-      <p>Real 💖</p>
+  <div id="love-message" class="hidden message-box">
+    <h2>💖 Mensaje Especial 💖</h2>
+    <p>Gracias por estar en mi vida, eres mi inspiración y alegría. 🌹</p>
+  </div>
+
+  <div id="song-section" class="hidden song-screen">
+    <audio controls autoplay>
+      <source src="discloure latch.mp3" type="audio/mpeg" />
+      Tu navegador no soporta audio.
+    </audio>
+    <div class="lyrics">
+      <p><strong>You lift my heart up when the rest of me is down</strong><br><em>Me alegras el corazón cuando el resto de mí está mal</em></p>
+      <p><strong>You, you enchant me, even when you’re not around</strong><br><em>Tú, tú me encantas, incluso cuando no estás cerca</em></p>
+      <p><strong>If there are boundaries, I will try to knock them down</strong><br><em>Si hay límites, intentaré derribarlos</em></p>
+      <p><strong>I’m latching on, babe, now I know what I have found</strong><br><em>Me estoy agarrando, amor, ahora sé lo que he encontrado</em></p>
+      <p><strong>I feel we’re close enough</strong><br><em>Siento que estamos lo suficientemente cerca</em></p>
+      <p><strong>I want to lock in your love</strong><br><em>Me quiero encerrar en tu amor</em></p>
+      <p><strong>I think we’re close enough</strong><br><em>Creo que estamos lo suficientemente cerca</em></p>
+      <p><strong>Could I lock in your love, baby?</strong><br><em>¿Me puedo encerrar en tu amor, cariño?</em></p>
+      <p><strong>Now I’ve got you in my space</strong><br><em>Ahora te tengo en mi espacio</em></p>
+      <p><strong>I won’t let go of you</strong><br><em>No te voy a dejar ir</em></p>
+      <p><strong>Got you shackled in my embrace</strong><br><em>Te tengo encadenado en mi abrazo</em></p>
+      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
+      <p><strong>Now I’ve got you in my space</strong><br><em>Ahora te tengo en mi espacio</em></p>
+      <p><strong>I won’t let go of you</strong><br><em>No te voy a dejar ir</em></p>
+      <p><strong>Got you shackled in my embrace</strong><br><em>Te tengo encadenado en mi abrazo</em></p>
+      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
+      <p><strong>I’m so encaptured, got me wrapped up in your touch</strong><br><em>Estoy tan atrapado, me envolví en tu toque</em></p>
+      <p><strong>Feel so enamored, hold me tight within your clutch</strong><br><em>Me siento enamorando, abrázame fuerte dentro de tu presa</em></p>
+      <p><strong>How do you do it? You got me losing every breath</strong><br><em>¿Cómo lo haces? Me hiciste perder cada aliento</em></p>
+      <p><strong>What did you give me, to make my heart beat out my chest?</strong><br><em>¿Qué me diste, para que mi corazón me golpeara el pecho?</em></p>
+      <p><strong>I feel we’re close enough</strong><br><em>Siento que estamos lo suficientemente cerca</em></p>
+      <p><strong>I want to lock in your love</strong><br><em>Me quiero encerrar en tu amor</em></p>
+      <p><strong>I think we’re close enough</strong><br><em>Creo que estamos lo suficientemente cerca</em></p>
+      <p><strong>Could I lock in your love, baby?</strong><br><em>¿Me puedo encerrar en tu amor, cariño?</em></p>
+      <p><strong>I feel we’re close enough</strong><br><em>Siento que estamos lo suficientemente cerca</em></p>
+      <p><strong>I want to lock in your love</strong><br><em>Me quiero encerrar en tu amor</em></p>
+      <p><strong>I think we’re close enough</strong><br><em>Creo que estamos lo suficientemente cerca</em></p>
+      <p><strong>Could I lock in your love, baby?</strong><br><em>¿Me puedo encerrar en tu amor, cariño?</em></p>
+      <p><strong>Now I’ve got you in my space</strong><br><em>Ahora te tengo en mi espacio</em></p>
+      <p><strong>I won’t let go of you</strong><br><em>No te voy a dejar ir</em></p>
+      <p><strong>Got you shackled in my embrace</strong><br><em>Te tengo encadenado en mi abrazo</em></p>
+      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
+      <p><strong>Now I’ve got you in my space</strong><br><em>Ahora te tengo en mi espacio</em></p>
+      <p><strong>I won’t let go of you</strong><br><em>No te voy a dejar ir</em></p>
+      <p><strong>Got you shackled in my embrace</strong><br><em>Te tengo encadenado en mi abrazo</em></p>
+      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
+      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
+      <p><strong>(I’m latching on)</strong><br><em>(Estoy agarrando a)</em></p>
+      <p><strong>I won’t let go again</strong><br><em>No voy a dejar ir de nuevo</em></p>
+      <p><strong>(I won’t let go)</strong><br><em>(No voy a dejar ir)</em></p>
+      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
+      <p><strong>(I don’t wanna let go)</strong><br><em>(No quiero dejarlo ir)</em></p>
+      <p><strong>I won’t let go again</strong><br><em>No voy a dejar ir de nuevo</em></p>
+      <p><strong>(I won’t let go)(I won’t let go)</strong><br><em>(No voy a dejar ir)(No voy a dejar ir)</em></p>
+      <p><strong>(I won’t let go)(I won’t let go)</strong><br><em>(No voy a dejar ir)(No voy a dejar ir)</em></p>
+      
+      <!-- Agrega el resto de la letra con su traducción aquí -->
     </div>
-    <button id="playPause">▶️</button>
-    <audio id="audio" src="Silvina Moreno - Real (Video Oficial)(MP3_160K).mp3" preload="auto"></audio>
+  </div>
+
+  <div id="restart" class="hidden">
+    <button onclick="restartGame()">🔁 Volver a jugar</button>
   </div>
 
   <script src="script.js"></script>
