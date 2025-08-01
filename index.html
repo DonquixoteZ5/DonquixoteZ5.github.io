@@ -2,79 +2,37 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>💖 Encuentra las Cartas Especiales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego de Amor - Empareja los Corazones</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="game-container">
-    <h1 class="title">💘 Encuentra las cartas especiales 💘</h1>
-    <div class="grid" id="grid"></div>
-  </div>
+  <div class="container">
+    <h1>Encuentra las parejas de amor 💗</h1>
+    <p class="sub">Haz clic en las cartitas y encuentra todas las parejas.</p>
 
-  <div id="love-message" class="hidden message-box">
-    <h2>💖 Mensaje Especial 💖</h2>
-    <p>Gracias por estar en mi vida, eres mi inspiración y alegría. 🌹</p>
-  </div>
+    <div class="audio-controls" id="audioControls">
+      <button id="playPause" aria-label="play/pause">▶️</button>
+      <input type="range" id="volume" min="0" max="1" step="0.01" aria-label="volumen">
+      <button id="mute" aria-label="silenciar">🔈</button>
+    </div>
 
-  <div id="song-section" class="hidden song-screen">
-    <audio controls autoplay>
-      <source src="discloure latch.mp3" type="audio/mpeg" />
-      Tu navegador no soporta audio.
-    </audio>
-    <div class="lyrics">
-      <p><strong>You lift my heart up when the rest of me is down</strong><br><em>Me alegras el corazón cuando el resto de mí está mal</em></p>
-      <p><strong>You, you enchant me, even when you’re not around</strong><br><em>Tú, tú me encantas, incluso cuando no estás cerca</em></p>
-      <p><strong>If there are boundaries, I will try to knock them down</strong><br><em>Si hay límites, intentaré derribarlos</em></p>
-      <p><strong>I’m latching on, babe, now I know what I have found</strong><br><em>Me estoy agarrando, amor, ahora sé lo que he encontrado</em></p>
-      <p><strong>I feel we’re close enough</strong><br><em>Siento que estamos lo suficientemente cerca</em></p>
-      <p><strong>I want to lock in your love</strong><br><em>Me quiero encerrar en tu amor</em></p>
-      <p><strong>I think we’re close enough</strong><br><em>Creo que estamos lo suficientemente cerca</em></p>
-      <p><strong>Could I lock in your love, baby?</strong><br><em>¿Me puedo encerrar en tu amor, cariño?</em></p>
-      <p><strong>Now I’ve got you in my space</strong><br><em>Ahora te tengo en mi espacio</em></p>
-      <p><strong>I won’t let go of you</strong><br><em>No te voy a dejar ir</em></p>
-      <p><strong>Got you shackled in my embrace</strong><br><em>Te tengo encadenado en mi abrazo</em></p>
-      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
-      <p><strong>Now I’ve got you in my space</strong><br><em>Ahora te tengo en mi espacio</em></p>
-      <p><strong>I won’t let go of you</strong><br><em>No te voy a dejar ir</em></p>
-      <p><strong>Got you shackled in my embrace</strong><br><em>Te tengo encadenado en mi abrazo</em></p>
-      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
-      <p><strong>I’m so encaptured, got me wrapped up in your touch</strong><br><em>Estoy tan atrapado, me envolví en tu toque</em></p>
-      <p><strong>Feel so enamored, hold me tight within your clutch</strong><br><em>Me siento enamorando, abrázame fuerte dentro de tu presa</em></p>
-      <p><strong>How do you do it? You got me losing every breath</strong><br><em>¿Cómo lo haces? Me hiciste perder cada aliento</em></p>
-      <p><strong>What did you give me, to make my heart beat out my chest?</strong><br><em>¿Qué me diste, para que mi corazón me golpeara el pecho?</em></p>
-      <p><strong>I feel we’re close enough</strong><br><em>Siento que estamos lo suficientemente cerca</em></p>
-      <p><strong>I want to lock in your love</strong><br><em>Me quiero encerrar en tu amor</em></p>
-      <p><strong>I think we’re close enough</strong><br><em>Creo que estamos lo suficientemente cerca</em></p>
-      <p><strong>Could I lock in your love, baby?</strong><br><em>¿Me puedo encerrar en tu amor, cariño?</em></p>
-      <p><strong>I feel we’re close enough</strong><br><em>Siento que estamos lo suficientemente cerca</em></p>
-      <p><strong>I want to lock in your love</strong><br><em>Me quiero encerrar en tu amor</em></p>
-      <p><strong>I think we’re close enough</strong><br><em>Creo que estamos lo suficientemente cerca</em></p>
-      <p><strong>Could I lock in your love, baby?</strong><br><em>¿Me puedo encerrar en tu amor, cariño?</em></p>
-      <p><strong>Now I’ve got you in my space</strong><br><em>Ahora te tengo en mi espacio</em></p>
-      <p><strong>I won’t let go of you</strong><br><em>No te voy a dejar ir</em></p>
-      <p><strong>Got you shackled in my embrace</strong><br><em>Te tengo encadenado en mi abrazo</em></p>
-      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
-      <p><strong>Now I’ve got you in my space</strong><br><em>Ahora te tengo en mi espacio</em></p>
-      <p><strong>I won’t let go of you</strong><br><em>No te voy a dejar ir</em></p>
-      <p><strong>Got you shackled in my embrace</strong><br><em>Te tengo encadenado en mi abrazo</em></p>
-      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
-      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
-      <p><strong>(I’m latching on)</strong><br><em>(Estoy agarrando a)</em></p>
-      <p><strong>I won’t let go again</strong><br><em>No voy a dejar ir de nuevo</em></p>
-      <p><strong>(I won’t let go)</strong><br><em>(No voy a dejar ir)</em></p>
-      <p><strong>I’m latching onto you</strong><br><em>Me estoy agarrando a ti</em></p>
-      <p><strong>(I don’t wanna let go)</strong><br><em>(No quiero dejarlo ir)</em></p>
-      <p><strong>I won’t let go again</strong><br><em>No voy a dejar ir de nuevo</em></p>
-      <p><strong>(I won’t let go)(I won’t let go)</strong><br><em>(No voy a dejar ir)(No voy a dejar ir)</em></p>
-      <p><strong>(I won’t let go)(I won’t let go)</strong><br><em>(No voy a dejar ir)(No voy a dejar ir)</em></p>
-      
-      <!-- Agrega el resto de la letra con su traducción aquí -->
+    <div id="board" class="board"></div>
+    <div id="message" class="message hidden">
+      <div class="modal">
+        <div class="close" id="closeBtn">&times;</div>
+        <div class="content">
+          <div id="phrase" class="phrase"></div>
+          <div class="extra">"Eres mi personita especial ❤️‍🩹"</div>
+          <button id="replay">Jugar de nuevo</button>
+        </div>
+      </div>
     </div>
   </div>
+  <canvas id="heartsCanvas" class="hearts-canvas"></canvas>
 
-  <div id="restart" class="hidden">
-    <button onclick="restartGame()">🔁 Volver a jugar</button>
-  </div>
+  <!-- audio (coloca un archivo llamado "fondo.mp3" en la misma carpeta) -->
+  <audio id="bgAudio" loop preload="auto" src="Fondo.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
