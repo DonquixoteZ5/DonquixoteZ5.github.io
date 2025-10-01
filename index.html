@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Juego de Amor - Empareja los Corazones</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caja de corazones ❤️</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Encuentra las parejas de amor 💗</h1>
-    <p class="sub">Haz clic en las cartitas y encuentra todas las parejas.</p>
+  <!-- Pantalla del juego -->
+  <section id="game-screen">
+    <h1>Atrapa 10 corazones ❤️</h1>
+    <p id="score">Corazones atrapados: 0 / 10</p>
+    <div id="game-area"></div>
+  </section>
 
-    <div class="audio-controls" id="audioControls">
-      <button id="playPause" aria-label="play/pause">▶️</button>
-      <input type="range" id="volume" min="0" max="1" step="0.01" aria-label="volumen">
-      <button id="mute" aria-label="silenciar">🔈</button>
+  <!-- Pantalla GANASTE -->
+  <section id="win-screen" class="hidden">
+    <h2 class="win-text">🎉 ¡Ganaste, eres una crack mi peque! 🎉</h2>
+  </section>
+
+  <!-- Pantalla final -->
+  <section id="final-screen" class="hidden">
+    <div class="hearts-container">
+      <h1 class="celebration">💖 Felices 10 mesessote mi vidaaa 💖</h1>
+      <p class="message">
+        Gracias por estos 10 meses llenos de amor, alegría y momentos super bonitos contigo.  
+        Eres lo mejor que me ha pasado, y siempre te lo digo mi amor, eres super increible,
+        jamas imagine tener una relacion tan hermosa con alguien tan bella, perfecta, hermosha, peshosa y divina. ❤️✨
+        Solo quiero decir que todo este tiempo que hemos sido novios, me ha encantado, 
+        me haces sentir bonito y especial 🥺💗
+        Gracias por aguantar mis berrinches, enojos, reclamos y celos, pero tambien 
+        por darme de tu amor, por aceptarme como soy y por aceptar mi amor bonito hacia ti. 💕✨
+        Te amooooooooo!!! ❤️‍🩹
+      </p>
+      <div id="floating-hearts"></div>
     </div>
-
-    <div id="board" class="board"></div>
-    <div id="message" class="message hidden">
-      <div class="modal">
-        <div class="close" id="closeBtn">&times;</div>
-        <div class="content">
-          <div id="phrase" class="phrase"></div>
-          <div class="extra">"Eres mi personita especial ❤️‍🩹"</div>
-          <button id="replay">Jugar de nuevo</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <canvas id="heartsCanvas" class="hearts-canvas"></canvas>
-
-  <!-- audio (coloca un archivo llamado "fondo.mp3" en la misma carpeta) -->
-  <audio id="bgAudio" loop preload="auto" src="Fondo.mp3"></audio>
+  </section>
 
   <script src="script.js"></script>
 </body>
